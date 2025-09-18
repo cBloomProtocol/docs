@@ -15,35 +15,70 @@
   "navigation": {
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "getting-started/what-is-bloom",
               "getting-started/creating-account",
-              "getting-started/connecting-wallet"
+              "getting-started/connecting-wallet",
+              "getting-started/understanding-points"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Missions & Tasks",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "missions/what-are-missions",
+              "missions/daily-tasks",
+              "missions/social-media-tasks",
+              "missions/verification-process",
+              "missions/earning-points",
+              "missions/reward-tiers"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Referral Program",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "referrals/how-referrals-work",
+              "referrals/sharing-code",
+              "referrals/tracking-referrals",
+              "referrals/commission-levels",
+              "referrals/maximizing-rewards"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Points & Rewards",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "rewards/earn-points",
+              "rewards/point-categories",
+              "rewards/reward-distribution",
+              "rewards/leaderboard",
+              "rewards/converting-points"
+            ]
+          },
+          {
+            "group": "Platform Features",
+            "pages": [
+              "platform/project-spotlight",
+              "platform/review-system"
+            ]
+          },
+          {
+            "group": "FAQs",
+            "pages": [
+              "faqs/account-issues",
+              "faqs/wallet-problems",
+              "faqs/payment-questions",
+              "faqs/points-rewards-faq",
+              "faqs/project-creation-faq"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/contact",
+              "support/report-issue",
+              "support/feature-requests",
+              "support/discord",
+              "support/help-center"
             ]
           }
         ]
