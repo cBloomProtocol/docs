@@ -13,9 +13,6 @@
     "strict": true
   },
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
         "groups": [
           {
             "group": "Getting started",
@@ -50,8 +47,8 @@
             ]
           }
         ]
-      }
-    ]
+      
+    
   },
   "logo": {
     "light": "/logo/logo_compact.png",
