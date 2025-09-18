@@ -88,8 +88,8 @@
     }
   },
   "logo": {
-    "light": "/logo/logo.png",
-    "dark": "/logo/logo.png"
+    "light": "/logo/logo_compact.png",
+    "dark": "/logo/logo_compact.png"
   },
   "navbar": {
     "links": [
