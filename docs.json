@@ -17,9 +17,9 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/what-is-bloom",
+              "getting-started/creating-account",
+              "getting-started/connecting-wallet"
             ]
           },
           {
