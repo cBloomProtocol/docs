@@ -27,8 +27,6 @@
             "group": "Missions & Tasks",
             "pages": [
               "missions/what-are-missions",
-              "missions/daily-tasks",
-              "missions/social-media-tasks",
               "missions/verification-process",
               "missions/earning-points",
               "missions/reward-tiers"
@@ -39,9 +37,7 @@
             "pages": [
               "referrals/how-referrals-work",
               "referrals/sharing-code",
-              "referrals/tracking-referrals",
-              "referrals/commission-levels",
-              "referrals/maximizing-rewards"
+              "referrals/tracking-referrals"
             ]
           },
           {
@@ -49,9 +45,7 @@
             "pages": [
               "rewards/earn-points",
               "rewards/point-categories",
-              "rewards/reward-distribution",
-              "rewards/leaderboard",
-              "rewards/converting-points"
+              "rewards/reward-distribution"
             ]
           },
           {
@@ -62,23 +56,11 @@
             ]
           },
           {
-            "group": "FAQs",
-            "pages": [
-              "faqs/account-issues",
-              "faqs/wallet-problems",
-              "faqs/payment-questions",
-              "faqs/points-rewards-faq",
-              "faqs/project-creation-faq"
-            ]
-          },
-          {
             "group": "Support",
             "pages": [
-              "support/contact",
+              "support/faq",
               "support/report-issue",
-              "support/feature-requests",
-              "support/discord",
-              "support/help-center"
+              "support/feature-requests"
             ]
           }
         ]
