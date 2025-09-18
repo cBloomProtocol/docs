@@ -57,20 +57,16 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Back to site",
+        "href": "https://bloomprotocol.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Back to site",
-      "href": "https://bloomprotocol.ai"
-    }
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/Bloom__Protocol",
+      "medium": "https://medium.com/@bloom__protocol",
+      "discord": "https://discord.gg/JyMtzjzmJZ"
     }
   }
 }
