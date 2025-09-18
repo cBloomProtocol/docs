@@ -1,152 +1,173 @@
 ---
 title: "Creating Your Account"
-description: "Step-by-step guide to joining Bloom Protocol"
+description: "Connect your wallet and start your Bloom Protocol journey"
 ---
 
 # Creating Your Account
 
-Getting started with Bloom Protocol is simple and takes just a few minutes. This guide will walk you through the entire process, from wallet connection to profile setup.
+Getting started with Bloom Protocol is simple. You'll need to connect a wallet and verify you're human. The entire process takes less than a minute.
 
-## Prerequisites
+## Supported Wallets
 
-Before you begin, you'll need:
+### Mobile Wallets
+If you're on mobile, we support:
+- **Phantom** - Most popular Solana wallet
+- **OKX Wallet** - Multi-chain wallet with excellent Solana support
 
-### A Solana Wallet
-Bloom Protocol supports multiple Solana wallets:
-- **Phantom** (Recommended)
-- **OKX Wallet** (Recommended)
-- **Solflare**
+### Desktop Wallets
+On desktop, we auto-detect and support:
+- **Phantom** 
+- **OKX Wallet**
 - **Backpack**
-- Other Solana-compatible wallets
+- **Solflare**
 
 <Info>
-**New to Solana?** We recommend [Phantom Wallet](https://phantom.app) for its user-friendly interface and seamless integration with Bloom Protocol.
+**Don't have a wallet?** We recommend [Phantom](https://phantom.app) for first-time users. It's available on iOS, Android, and as a browser extension.
 </Info>
 
-### Some SOL for Gas Fees
-You'll need a small amount of SOL (Solana's native token) for transaction fees:
-- **Minimum recommended**: 0.1 SOL
-- **For active users**: 0.5 SOL
-- Transaction fees on Solana are typically less than $0.01
+## Connection Process
 
-## Step 1: Connect Your Wallet
+### Step 1: Click Connect Wallet
 
-### Navigate to Bloom Protocol
-1. Visit [bloomprotocol.ai](https://bloomprotocol.ai)
-2. Click the **"Connect Wallet"** button in the top right corner
+Look for the "Connect Wallet" button in the navigation menu. Clicking it opens the authentication modal.
 
-### Select Your Wallet
-1. Choose your wallet from the list
-2. Approve the connection request in your wallet
-3. Sign the verification message to confirm ownership
+### Step 2: Human Verification
 
-<Warning>
-**Security Tip**: Always verify you're on the official bloomprotocol.ai domain before connecting your wallet. Check for the secure lock icon in your browser.
-</Warning>
+You'll see a Cloudflare Turnstile widget to verify you're human. This helps prevent bots and ensures a fair platform for everyone.
 
-## What's next?
+<Note>
+In development mode, you may see a "Skip Verification" button if Turnstile isn't configured.
+</Note>
 
-New users have access to special onboarding missions:
+### Step 3: Choose Your Authentication Method
 
-### Welcome Missions
-- **Profile Completion**: +100 points
-- **First Wallet Connection**: +50 points
-- **Email Verification**: +75 points
-- **First Project Support**: +200 points
+After verification, you'll see your authentication options:
 
-These missions help you:
-- Learn platform features
-- Earn your first points
-- Unlock additional features
+#### Wallet Connection (Recommended)
+- **On Mobile**: Select Phantom or OKX Wallet. You'll be redirected to the app.
+- **On Desktop**: Choose from detected wallets. A popup will ask you to approve the connection.
 
-## Account Features
+#### Email/Google Login
+If you prefer not to use a wallet directly, you can login with:
+- Email address
+- Google account
 
-### Dashboard Access
-Your personalized dashboard shows:
-- Portfolio overview
-- Recent activity
-- Points balance
-- Mission progress
-- Project updates
+This creates an embedded wallet for you behind the scenes.
 
-### Notification Settings
-Customize alerts for:
-- Project updates
-- Mission completions
-- Reward distributions
-- Community mentions
+### Step 4: Sign the Message
 
-### Privacy Controls
-Manage your visibility:
-- Public/Private profile
-- Activity sharing
-- Contact preferences
+After selecting your wallet, you'll need to sign a message to prove ownership. This is free and doesn't cost any gas.
+
+### Step 5: Account Creation
+
+If this is your first time, we'll automatically:
+1. Create your Bloom Protocol account
+2. Link it to your wallet address
+3. Generate your authentication token
+4. Set up your default role (Supporter)
+
+If you have a referral code, it will be automatically applied during registration.
+
+## After Connecting
+
+Once connected, you'll have access to:
+
+### Your Dashboard
+- View your points balance
+- Track your mission progress
+- See your supported projects
+- Monitor your referrals
+
+### Role Selection
+By default, you start as a **Supporter**. You can switch to **Builder** mode anytime from your profile if you want to launch a project.
+
+### Profile Setup
+While not required, we recommend:
+- Adding a profile picture
+- Setting a display name
+- Verifying your email for notifications
+
+## Wallet Management
+
+### Switching Wallets
+To switch wallets:
+1. Disconnect your current wallet
+2. Connect with a different wallet
+3. Your account data remains linked to each wallet address
+
+### Disconnecting
+You can disconnect anytime by:
+- Clicking your profile icon
+- Selecting "Disconnect"
+
+This logs you out but doesn't delete your account.
 
 ## Troubleshooting
 
-### Wallet Connection Issues
+### Wallet Not Detected
+**Desktop Issue**: Make sure your wallet extension is:
+- Installed and enabled
+- Unlocked
+- Set to Solana network
 
-**Problem**: Wallet won't connect
-- **Solution**: Refresh the page and try again
-- Clear your browser cache
-- Update your wallet extension
+**Mobile Issue**: Ensure you have the wallet app installed
+
+### Connection Failed
+Common solutions:
+- Refresh the page and try again
+- Check your wallet is unlocked
+- Clear browser cache
 - Try a different browser
 
-**Problem**: Transaction fails
-- **Solution**: Ensure you have enough SOL for gas
-- Check network congestion
-- Try again in a few moments
-
-### Profile Issues
-
-**Problem**: Can't upload profile picture
-- **Solution**: Ensure image is under 5MB
-- Use JPG, PNG, or GIF format
+### Verification Stuck
+If Turnstile verification doesn't load:
 - Check your internet connection
+- Disable ad blockers temporarily
+- Try incognito/private mode
 
-**Problem**: Username taken
-- **Solution**: Try variations with numbers or underscores
-- Use a unique combination
-- Contact support if it's your brand name
+### Transaction Errors
+If signing fails:
+- Ensure you have at least 0.001 SOL for fees
+- Check you're on Solana mainnet
+- Try disconnecting and reconnecting
 
-## Best Practices
+## Security Tips
 
-### For New Users
-1. **Start as a Supporter**: Learn the platform before launching a project
-2. **Complete all missions**: Maximize your initial points
-3. **Join the Discord**: Connect with the community
-4. **Follow top projects**: Learn from successful builders
+### Keep Your Wallet Safe
+- **Never share** your seed phrase or private keys
+- **Verify the URL** - always connect on bloomprotocol.ai
+- **Check permissions** before signing transactions
 
-### Security Tips
-- **Never share** your private keys or seed phrase
-- **Verify URLs** before connecting your wallet
-- **Use hardware wallets** for large holdings
-- **Enable all security features** available
+### Account Security
+- Use a hardware wallet for large holdings
+- Enable 2FA if you verify your email
+- Regularly check your connected apps in your wallet
 
 ## Next Steps
 
-Congratulations! Your account is now set up. Here's what to do next:
+Now that you're connected:
 
 <Card title="Understanding Drops" icon="gift" href="/getting-started/understanding-drops">
-  Learn how reward distributions work
-</Card>
-
-<Card title="Discover Projects" icon="search" href="/platform/project-spotlight">
-  Explore innovative projects to support
+  Learn how to earn rewards through our drop system
 </Card>
 
 <Card title="Complete Missions" icon="target" href="/missions/what-are-missions">
-  Start earning points and rewards
+  Start earning points with daily missions
+</Card>
+
+<Card title="Discover Projects" icon="search" href="/platform/project-spotlight">
+  Explore and support innovative projects
 </Card>
 
 ## Need Help?
 
-If you encounter any issues:
+If you're having trouble:
 - Check our [FAQ](/support/faq)
-- Visit [Discord](https://discord.gg/bloomprotocol) for community support
+- Join our [Discord](https://discord.gg/JyMtzjzmJZ) for live support
+- Reach out on [X/Twitter](https://x.com/Bloom__Protocol)
 
 ---
 
 <Success>
-**Welcome to Bloom Protocol!** You're now part of the future of early-stage project funding. Start exploring and make your mark in the ecosystem.
+**You're all set!** Welcome to Bloom Protocol - where innovation meets opportunity.
 </Success>
