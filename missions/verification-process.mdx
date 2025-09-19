@@ -1,8 +1,155 @@
 ---
 title: "Verification Process"
-description: "How tasks are verified"
+description: "Understanding how mission tasks are verified and validated"
 ---
 
 # Verification Process
 
-Content coming soon...
+Bloom Protocol uses a robust verification system to ensure fair and accurate task completion. Here's how the process works:
+
+## Verification Types
+
+### Automated Verification
+- **Real-Time Checking**: Instant verification for most engagement tasks
+- **API Integration**: Direct connection with social platforms
+- **Speed**: Typically completes within 1-5 minutes
+- **Tasks Covered**: Following, liking, sharing, basic engagement
+
+### Manual Review
+- **Content Quality**: Human reviewers assess creative submissions
+- **Timeline**: 1-24 hours for review completion
+- **Tasks Covered**: Written content, creative posts, bounty submissions
+- **Quality Standards**: Originality, relevance, and community value
+
+## Task Status Flow
+
+### Initial State
+- **Status**: Pending
+- **Button**: Purple "Start" button
+- **Action**: Task ready to begin
+
+### Submission State
+- **Status**: In Progress
+- **Button**: Gray "Processing" button
+- **Action**: Verification underway
+
+### Completion States
+- **Completed**: Green "Completed" button with checkmark
+- **Failed**: Red "Retry" button for resubmission
+
+## Automated Verification Details
+
+### Social Media Engagement
+1. **Task Submission**: User clicks task button and completes action
+2. **Platform Check**: System queries social platform APIs
+3. **Verification**: Confirms completion (follow, like, share)
+4. **Status Update**: Immediate green checkmark upon confirmation
+5. **Reward Distribution**: Drops automatically added to account
+
+### Supported Platforms
+- **Twitter/X**: Follows, likes, retweets, replies
+- **Discord**: Server joins, message reactions
+- **Telegram**: Channel joins, post interactions
+- **YouTube**: Subscriptions, likes, comments
+
+### Verification Timing
+- **Immediate**: Simple engagement tasks (follows, likes)
+- **1-2 Minutes**: Platform API synchronization delay
+- **Up to 5 Minutes**: Network delays or platform rate limits
+
+## Manual Review Process
+
+### Content Submission Tasks
+1. **User Submission**: Content uploaded with URL and description
+2. **Queue Assignment**: Submission enters moderation queue
+3. **Reviewer Assignment**: Available moderator claims the task
+4. **Quality Assessment**: Content evaluated against standards
+5. **Decision**: Approval or rejection with feedback
+6. **Notification**: User receives status update
+
+### Review Criteria
+
+#### Content Quality Standards
+- **Originality**: Must be user-created, not copied content
+- **Relevance**: Should relate to Bloom Protocol or assigned topic
+- **Effort**: Demonstrates thoughtful engagement and effort
+- **Community Value**: Contributes positively to the ecosystem
+
+#### Technical Requirements
+- **URL Validity**: Links must lead to accessible content
+- **Privacy Settings**: Content must be publicly viewable
+- **Platform Compliance**: Adheres to social platform rules
+- **Character Limits**: Stays within specified length requirements
+
+## Verification Challenges
+
+### Common Rejection Reasons
+- **Broken Links**: URLs that don't work or lead to wrong content
+- **Private Content**: Posts not publicly accessible
+- **Low Quality**: Minimal effort or copy-paste content
+- **Off-Topic**: Content unrelated to the task requirements
+- **Duplicate Submissions**: Reusing content from previous tasks
+
+### Privacy and Access Issues
+- **Profile Privacy**: Ensure social profiles are public
+- **Content Visibility**: Check that posts aren't restricted
+- **Platform Changes**: Account for platform algorithm updates
+- **Geographic Restrictions**: Some content may not be globally accessible
+
+## Resubmission Process
+
+### Failed Task Recovery
+1. **Review Feedback**: Check rejection reason in task interface
+2. **Content Improvement**: Address specific issues mentioned
+3. **Resubmission**: Use "Retry" button to submit again
+4. **Fresh Review**: New submission gets independent evaluation
+
+### Best Practices for Resubmission
+- **Read Feedback Carefully**: Understand why the submission was rejected
+- **Make Substantial Changes**: Don't just resubmit the same content
+- **Follow Guidelines**: Review task requirements before resubmitting
+- **Quality Focus**: Prioritize quality over speed in resubmissions
+
+## Verification Security
+
+### Anti-Fraud Measures
+- **Duplicate Detection**: System identifies repeated submissions
+- **Account Verification**: User authentication prevents gaming
+- **Pattern Recognition**: Unusual activity patterns trigger additional review
+- **Cross-Platform Validation**: Multiple verification points for complex tasks
+
+### Fair Play Enforcement
+- **Terms Compliance**: All submissions must follow platform terms
+- **Community Standards**: Content must meet community guidelines
+- **Original Work**: Plagiarism or copied content results in rejection
+- **Authentic Engagement**: Genuine interaction required, not automated
+
+## Technical Verification Details
+
+### API Limitations
+- **Rate Limits**: Platform APIs may delay verification
+- **Synchronization**: Some platforms have longer sync times
+- **Cache Updates**: Recent actions may take time to appear
+- **Platform Outages**: External platform issues can affect verification
+
+### System Architecture
+- **Redundant Checking**: Multiple verification attempts for reliability
+- **Error Handling**: Graceful handling of platform API failures
+- **Retry Logic**: Automatic retry for temporary verification failures
+- **Monitoring**: Continuous system health monitoring
+
+## User Support
+
+### Verification Issues
+- **Contact Support**: Report persistent verification problems
+- **Documentation**: Detailed help available for common issues
+- **Community Help**: User community provides peer support
+- **Status Updates**: Regular communication about system issues
+
+### Escalation Process
+- **Level 1**: Automatic retry and troubleshooting
+- **Level 2**: Community moderator review
+- **Level 3**: Technical team investigation
+- **Resolution**: Manual verification or task adjustment
+
+The verification process ensures fair play while maintaining a smooth user experience. Most tasks verify quickly and automatically, while creative content receives thoughtful human review to maintain quality standards.
