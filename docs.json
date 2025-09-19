@@ -25,9 +25,7 @@
             "group": "Missions & Tasks",
             "pages": [
               "missions/what-are-missions",
-              "missions/verification-process",
-              "missions/earning-points",
-              "missions/reward-tiers"
+              "missions/earning-points"
             ]
           },
           {
@@ -36,14 +34,6 @@
               "referrals/how-referrals-work",
               "referrals/sharing-code",
               "referrals/tracking-referrals"
-            ]
-          },
-          {
-            "group": "Points & Rewards",
-            "pages": [
-              "rewards/earn-points",
-              "rewards/point-categories",
-              "rewards/reward-distribution"
             ]
           },
           {
