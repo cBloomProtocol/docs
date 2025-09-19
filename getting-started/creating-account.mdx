@@ -2,155 +2,249 @@
 title: "Creating Your Account"
 ---
 
-Getting started with Bloom Protocol takes less than a minute. You'll just need to verify you're human and choose your preferred authentication method.
+Getting started with Bloom Protocol takes less than a minute. No lengthy forms, no email confirmations, no waiting. Just verify you're human, connect, and you're in.
 
 <Tip>
-We recommend using Chrome browser on both desktop and mobile for the best experience.
+**Browser Recommendation**: Chrome delivers the smoothest experience on both desktop and mobile.
 </Tip>
 
-## Supported Wallets
+## Choose Your Wallet
 
-| Platform | Wallets |
-|----------|---------|
-| **Mobile** | Phantom, OKX Wallet |
-| **Desktop** | Phantom, OKX Wallet, Backpack, Solflare |
+### Platform Compatibility Matrix
+
+| Platform | Wallet Options | Best For | Setup Time |
+|----------|---------------|----------|------------|
+| **Mobile iOS** | Phantom, OKX Wallet | On-the-go missions | 2 minutes |
+| **Mobile Android** | Phantom, OKX Wallet | Mobile-first users | 2 minutes |
+| **Desktop Chrome** | Phantom, OKX, Backpack, Solflare | Power users | 3 minutes |
+| **Desktop Firefox** | Phantom, Solflare | Privacy-focused | 3 minutes |
 
 <Info>
-**Don't have a wallet?** We recommend [Phantom](https://phantom.app) for first-time users. It's available on iOS, Android, and as a browser extension.
+**First time with wallets?** [Phantom](https://phantom.app) is your best bet. Works everywhere, intuitive interface, massive community support.
 </Info>
 
-## Connection Process
+## The 5-Step Connection Process
 
-### Step 1: Click Connect Wallet
+```
+Connection Flow:
+1. Locate Connect Button → Top-right navigation
+2. Pass Human Check → Cloudflare Turnstile
+3. Choose Auth Method → Wallet or Email
+4. Sign Message → Prove ownership
+5. Welcome Aboard → Start earning
+```
 
-Look for the "Connect" button in the navigation menu. The location varies by device:
+### Step 1: Find Your Entry Point
 
-**Desktop View**
-The Connect button appears in the top-right corner of the navigation bar.
-<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_desktop.jpg" alt="Bloom Protocol Connect Wallet Interface" width="100%" />
+> **Button Location Guide:**
+> - **Desktop**: Top-right corner of navigation bar
+> - **Mobile**: Center of navigation bar (not in hamburger menu)
+> - **Tablet**: Same as desktop layout
 
-**Mobile View**
-The Connect button appears directly in the navigation bar.
-<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_mobile.jpg" alt="Bloom Protocol Connect Wallet Interface" width="100%" />
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_desktop.jpg" alt="Desktop Connect Button Location" width="100%" />
+
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_mobile.jpg" alt="Mobile Connect Button Location" width="100%" />
 
 ### Step 2: Human Verification
 
-We'll check if you're a bot or a real person. As long as you're human, this check will pass and you can choose your login method. If you're human but mistakenly flagged as a bot, simply try again.
+**The Bot Barrier**
 
-Since human verification is essential for security, you may need to wait a moment for the verification process to complete.
+Cloudflare Turnstile stands guard. It's quick, usually invisible, occasionally annoying.
 
-*The animation below shows the mobile experience:*
-<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_human-verification.gif" alt="Human verification process" />
+| Verification Result | What Happens | Your Action |
+|--------------------|--------------|-------------|
+| **Instant Pass** | Proceeds automatically | Continue to wallet |
+| **Challenge Required** | Simple puzzle appears | Complete it |
+| **Failed Attempt** | Red error message | Try again |
+| **Repeated Failures** | Temporary block | Wait 5 minutes |
 
-### Step 3: Choose Your Authentication Method
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_human-verification.gif" alt="Human verification in action" width="100%" />
 
-After verification, you'll see your authentication options:
+### Step 3: Authentication Routes
 
-<Note>
-**Important**: Remember which method you use to sign in. Your account data is tied to your authentication method, so using the same method ensures you access the same account across all devices.
-</Note>
+<Warning>
+**One account per method**. Switching between wallet and email creates separate accounts. These cannot be merged. Choose wisely.
+</Warning>
 
-#### Wallet Connection (Recommended)
-- **On Mobile**: Select Phantom or OKX Wallet. You'll be redirected to the app.
-- **On Desktop**: Choose from detected wallets. A popup will ask you to approve the connection.
+#### Route A: Wallet Connection (Recommended)
 
-#### Email/Google Login
-If you prefer not to use a wallet directly, you can login with:
-- Email address
-- Google account
+```
+Wallet Flow:
+├── Mobile Path
+│   ├── Tap wallet option
+│   ├── App opens automatically
+│   └── Approve in wallet app
+└── Desktop Path
+    ├── Click wallet option
+    ├── Browser popup appears
+    └── Approve in extension
+```
 
-This creates an embedded wallet for you behind the scenes.
+**Why wallet?** True ownership, no passwords, seamless Web3 integration.
 
-### Step 4: Sign the Message
+#### Route B: Email/Google Login
 
-After selecting your wallet, you'll need to sign a message to prove ownership. This is free and doesn't cost any gas.
+```
+Email Flow:
+├── Click email option
+├── Enter credentials
+└── Verify if needed
+```
 
-### Step 5: Account Creation
+**Why email?** Familiar process, no wallet setup, perfect for beginners.
 
-If this is your first time, we'll automatically:
-1. Create your Bloom Protocol account
-2. Link it to your wallet address
-3. Set up your default role (Supporter)
+### Step 4: Message Signing
 
-If you registered through someone's referral link, they will receive points when you complete your registration.
+| What You See | What It Means | Cost |
+|--------------|---------------|------|
+| "Sign this message" popup | Proving you control the address | **$0.00** |
+| Transaction details | Just verification, not a payment | **Zero gas** |
+| Wallet confirmation | Standard security check | **No fees** |
 
-## After Connecting
+### Step 5: Account Activation
 
-Once connected, you'll have access to:
+**First-Time Setup (Automatic)**
 
-### Your Dashboard
-- View your points balance
-- Track your mission progress
-- See your supported projects
-- Monitor your referrals
+```
+✓ Account created instantly
+✓ Wallet linked to profile
+✓ Supporter role assigned
+✓ Referral tracked (if applicable)
+✓ Ready to earn drops
+```
 
-### Role Selection
-By default, you start as a **Supporter**.
+## Your Command Center
 
-<Info>
-The ability to switch to **Builder** mode will be enabled in a future release for those who want to launch projects.
-</Info>
+### Dashboard Components
+
+| Section | Shows | Primary Action |
+|---------|-------|----------------|
+| **Drops Counter** | Current balance | Track earnings |
+| **Mission Hub** | Available tasks | Start completing |
+| **Projects** | Your supports | View progress |
+| **Referrals** | Invite status | Share your code |
+| **Recent Activity** | Latest actions | Monitor account |
+
+### Understanding Your Role
+
+> **Current Status: Supporter**
+> - Complete missions
+> - Earn drops
+> - Support projects
+> - Refer friends
+> 
+> **Coming Soon: Builder**
+> - Launch projects
+> - Create missions
+> - Manage communities
+
+## Troubleshooting Matrix
+
+### Common Issues & Quick Fixes
+
+| Problem | Likely Cause | Solution | Time to Fix |
+|---------|-------------|----------|-------------|
+| **No wallets showing** | Extension disabled | Enable in browser settings | 30 seconds |
+| **Connection timeout** | Network congestion | Retry in 1 minute | 1-2 minutes |
+| **Wallet locked** | Security timeout | Unlock with password | 10 seconds |
+| **Wrong network** | Not on Solana | Switch in wallet settings | 30 seconds |
+| **Verification loops** | Cookie issues | Clear cache and cookies | 2 minutes |
+| **Mobile app won't open** | Not installed | Download from app store | 3 minutes |
+
+### Platform-Specific Fixes
+
+<Tabs>
+<Tab title="Desktop Issues">
+
+```
+Troubleshooting Checklist:
+□ Wallet extension installed
+□ Extension enabled
+□ Popup blocker disabled
+□ Wallet unlocked
+□ Correct network selected
+□ Browser updated
+```
+
+</Tab>
+<Tab title="Mobile Issues">
+
+```
+Troubleshooting Checklist:
+□ Wallet app installed
+□ App updated to latest
+□ Deep linking enabled
+□ Browser permissions granted
+□ Background refresh on
+□ Sufficient storage
+```
+
+</Tab>
+</Tabs>
+
+### The Nuclear Option
+
+Still stuck after everything?
+
+```
+Full Reset Procedure:
+1. Clear ALL browser data
+2. Restart browser/device
+3. Re-install wallet
+4. Try different browser
+5. Contact support if failed
+```
+
+## Quick Actions
 
 ### Disconnecting
-You can disconnect anytime by:
-- Click your profile icon
-- Select "Disconnect"
 
-This logs you out but doesn't delete your account.
+```
+Two clicks to freedom:
+Profile Icon → Disconnect
+```
 
-## Troubleshooting
+Your account data persists. Return anytime with the same wallet.
 
-### Wallet Not Detected
-**Desktop Issue**: Make sure your wallet extension is:
-- Installed and enabled
-- Unlocked
-- Set to Solana network
+### Switching Accounts
 
-**Mobile Issue**: Ensure you have the wallet app installed
+| Action | Result | Important Note |
+|--------|--------|----------------|
+| **Use different wallet** | New account created | Cannot merge |
+| **Use different email** | New account created | Separate identity |
+| **Clear and reconnect** | Same account loads | Data intact |
 
-### Connection Failed
-Wallet connections on mobile devices aren't always as seamless as traditional email or SSO login. The process involves switching between apps and granting permissions, which can occasionally fail.
+## Next Steps Navigation
 
-Common solutions:
-- Be patient - the connection may take a few moments
-- Refresh the page and try again
-- Check your wallet is unlocked
-- Clear browser cache
-
-### Verification Stuck
-Cloudflare's verification is an industry-proven security service that protects our platform. If verification fails, it's determined entirely by Cloudflare's advanced algorithms - we cannot override or diagnose their decisions.
-
-This system helps ensure Bloom Protocol remains a genuine community for real users and builders, not professional airdrop hunters or bot farms. If you're a real user experiencing issues, simply try again later.
-
-## Next Steps
-
-Now that you're connected:
-
-<Card title="Understanding Drops" icon="gift" href="/getting-started/understanding-drops">
-  Learn how to earn rewards through our drop system
+<Card title="Understanding Drops" icon="droplet" href="/getting-started/understanding-drops">
+  Master the points system that drives everything
 </Card>
 
-<Card title="Complete Missions" icon="target" href="/missions/what-are-missions">
-  Start earning points with daily missions
+<Card title="Mission Control" icon="rocket" href="/missions/what-are-missions">
+  Discover how to earn your first drops
 </Card>
 
-<Card title="Account Security" icon="shield" href="/support/account-security">
-  Learn how to keep your account safe
+<Card title="Security Fortress" icon="lock" href="/support/account-security">
+  Lock down your account properly
 </Card>
 
-<Card title="Discover Projects" icon="search" href="/platform/project-spotlight">
-  Explore and support innovative projects
+<Card title="Project Explorer" icon="compass" href="/platform/project-spotlight">
+  Find projects worth your support
 </Card>
 
-## Need Help?
+## Emergency Support
 
-If you're having trouble:
-- Check our [FAQ](/support/faq)
-- Join our [Discord](https://discord.gg/JyMtzjzmJZ) for live support
-- Reach out on [X/Twitter](https://x.com/Bloom__Protocol)
+### Help Hierarchy
+
+| Support Level | Channel | Response Time | Best For |
+|--------------|---------|---------------|----------|
+| **Self-Service** | [FAQ](/support/faq) | Instant | Common issues |
+| **Community** | [Discord](https://discord.gg/JyMtzjzmJZ) | Minutes | Quick questions |
+| **Official** | [#report-issue](https://discord.gg/JyMtzjzmJZ) | Hours | Bug reports |
+| **Social** | [@Bloom__Protocol](https://x.com/Bloom__Protocol) | Variable | Updates |
 
 ---
 
 <Success>
-**You're all set!** Welcome to Bloom Protocol - where innovation meets opportunity.
+**Account created successfully?** You've just joined the future of project support. Time to explore, engage, and earn. Welcome to Bloom Protocol.
 </Success>

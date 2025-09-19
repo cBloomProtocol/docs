@@ -25,15 +25,7 @@
             "group": "Missions & Tasks",
             "pages": [
               "missions/what-are-missions",
-              "missions/earning-points"
-            ]
-          },
-          {
-            "group": "Referral Program",
-            "pages": [
-              "referrals/how-referrals-work",
-              "referrals/sharing-code",
-              "referrals/tracking-referrals"
+              "missions/task-completion-and-drops"
             ]
           },
           {
@@ -48,9 +40,8 @@
             "group": "Support",
             "pages": [
               "support/faq",
-              "support/account-security",
               "support/report-issue",
-              "support/feature-requests"
+              "support/account-security"
             ]
           }
         ]
