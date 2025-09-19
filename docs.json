@@ -58,6 +58,7 @@
             "group": "Support",
             "pages": [
               "support/faq",
+              "support/account-security",
               "support/report-issue",
               "support/feature-requests"
             ]

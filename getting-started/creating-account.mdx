@@ -1,25 +1,19 @@
 ---
 title: "Creating Your Account"
-description: "Connect your wallet and start your Bloom Protocol journey"
 ---
 
-# Creating Your Account
+Getting started with Bloom Protocol takes less than a minute. You'll just need to verify you're human and choose your preferred authentication method.
 
-Getting started with Bloom Protocol is simple. You'll need to connect a wallet and verify you're human. The entire process takes less than a minute.
+<Tip>
+We recommend using Chrome browser on both desktop and mobile for the best experience.
+</Tip>
 
 ## Supported Wallets
 
-### Mobile Wallets
-If you're on mobile, we support:
-- **Phantom** - Most popular Solana wallet
-- **OKX Wallet** - Multi-chain wallet with excellent Solana support
-
-### Desktop Wallets
-On desktop, we auto-detect and support:
-- **Phantom** 
-- **OKX Wallet**
-- **Backpack**
-- **Solflare**
+| Platform | Wallets |
+|----------|---------|
+| **Mobile** | Phantom, OKX Wallet |
+| **Desktop** | Phantom, OKX Wallet, Backpack, Solflare |
 
 <Info>
 **Don't have a wallet?** We recommend [Phantom](https://phantom.app) for first-time users. It's available on iOS, Android, and as a browser extension.
@@ -29,19 +23,32 @@ On desktop, we auto-detect and support:
 
 ### Step 1: Click Connect Wallet
 
-Look for the "Connect Wallet" button in the navigation menu. Clicking it opens the authentication modal.
+Look for the "Connect" button in the navigation menu. The location varies by device:
+
+**Desktop View**
+The Connect button appears in the top-right corner of the navigation bar.
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_desktop.jpg" alt="Bloom Protocol Connect Wallet Interface" width="100%" />
+
+**Mobile View**
+The Connect button appears directly in the navigation bar.
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_mobile.jpg" alt="Bloom Protocol Connect Wallet Interface" width="100%" />
 
 ### Step 2: Human Verification
 
-You'll see a Cloudflare Turnstile widget to verify you're human. This helps prevent bots and ensures a fair platform for everyone.
+We'll check if you're a bot or a real person. As long as you're human, this check will pass and you can choose your login method. If you're human but mistakenly flagged as a bot, simply try again.
 
-<Note>
-In development mode, you may see a "Skip Verification" button if Turnstile isn't configured.
-</Note>
+Since human verification is essential for security, you may need to wait a moment for the verification process to complete.
+
+*The animation below shows the mobile experience:*
+<img src="https://statics.bloomprotocol.ai/tutorial/bloom_protocol_human-verification.gif" alt="Human verification process" />
 
 ### Step 3: Choose Your Authentication Method
 
 After verification, you'll see your authentication options:
+
+<Note>
+**Important**: Remember which method you use to sign in. Your account data is tied to your authentication method, so using the same method ensures you access the same account across all devices.
+</Note>
 
 #### Wallet Connection (Recommended)
 - **On Mobile**: Select Phantom or OKX Wallet. You'll be redirected to the app.
@@ -63,10 +70,9 @@ After selecting your wallet, you'll need to sign a message to prove ownership. T
 If this is your first time, we'll automatically:
 1. Create your Bloom Protocol account
 2. Link it to your wallet address
-3. Generate your authentication token
-4. Set up your default role (Supporter)
+3. Set up your default role (Supporter)
 
-If you have a referral code, it will be automatically applied during registration.
+If you registered through someone's referral link, they will receive points when you complete your registration.
 
 ## After Connecting
 
@@ -79,26 +85,16 @@ Once connected, you'll have access to:
 - Monitor your referrals
 
 ### Role Selection
-By default, you start as a **Supporter**. You can switch to **Builder** mode anytime from your profile if you want to launch a project.
+By default, you start as a **Supporter**.
 
-### Profile Setup
-While not required, we recommend:
-- Adding a profile picture
-- Setting a display name
-- Verifying your email for notifications
-
-## Wallet Management
-
-### Switching Wallets
-To switch wallets:
-1. Disconnect your current wallet
-2. Connect with a different wallet
-3. Your account data remains linked to each wallet address
+<Info>
+The ability to switch to **Builder** mode will be enabled in a future release for those who want to launch projects.
+</Info>
 
 ### Disconnecting
 You can disconnect anytime by:
-- Clicking your profile icon
-- Selecting "Disconnect"
+- Click your profile icon
+- Select "Disconnect"
 
 This logs you out but doesn't delete your account.
 
@@ -113,35 +109,18 @@ This logs you out but doesn't delete your account.
 **Mobile Issue**: Ensure you have the wallet app installed
 
 ### Connection Failed
+Wallet connections on mobile devices aren't always as seamless as traditional email or SSO login. The process involves switching between apps and granting permissions, which can occasionally fail.
+
 Common solutions:
+- Be patient - the connection may take a few moments
 - Refresh the page and try again
 - Check your wallet is unlocked
 - Clear browser cache
-- Try a different browser
 
 ### Verification Stuck
-If Turnstile verification doesn't load:
-- Check your internet connection
-- Disable ad blockers temporarily
-- Try incognito/private mode
+Cloudflare's verification is an industry-proven security service that protects our platform. If verification fails, it's determined entirely by Cloudflare's advanced algorithms - we cannot override or diagnose their decisions.
 
-### Transaction Errors
-If signing fails:
-- Ensure you have at least 0.001 SOL for fees
-- Check you're on Solana mainnet
-- Try disconnecting and reconnecting
-
-## Security Tips
-
-### Keep Your Wallet Safe
-- **Never share** your seed phrase or private keys
-- **Verify the URL** - always connect on bloomprotocol.ai
-- **Check permissions** before signing transactions
-
-### Account Security
-- Use a hardware wallet for large holdings
-- Enable 2FA if you verify your email
-- Regularly check your connected apps in your wallet
+This system helps ensure Bloom Protocol remains a genuine community for real users and builders, not professional airdrop hunters or bot farms. If you're a real user experiencing issues, simply try again later.
 
 ## Next Steps
 
@@ -153,6 +132,10 @@ Now that you're connected:
 
 <Card title="Complete Missions" icon="target" href="/missions/what-are-missions">
   Start earning points with daily missions
+</Card>
+
+<Card title="Account Security" icon="shield" href="/support/account-security">
+  Learn how to keep your account safe
 </Card>
 
 <Card title="Discover Projects" icon="search" href="/platform/project-spotlight">

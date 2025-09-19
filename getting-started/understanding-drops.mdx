@@ -3,19 +3,14 @@ title: "Understanding Drops"
 description: "Learn how Bloom Protocol's points and rewards system works"
 ---
 
-# Understanding Drops
-
 Drops are Bloom Protocol's points system - the water drop icons you see in your navigation bar represent your accumulated rewards. Think of them as your score for participating in the ecosystem.
+
+<img src="https://statics.bloomprotocol.ai/logo/water-drop-icon.svg" alt="Official Drops Icon" width="60" />
+*The official Drops icon*
 
 ## What Are Drops?
 
-Drops are points you earn for various activities on Bloom Protocol. They're displayed with a water drop icon (💧) in the navigation menu once you're logged in. Your drop balance reflects your contribution and engagement with the platform.
-
-### The Points System
-
-Bloom Protocol uses two types of points:
-- **Drops** - Your main reward points, shown in the navigation
-- **Mini Points** - Additional points for specific activities
+Drops are points you earn for various activities on Bloom Protocol. They're displayed with a water drop icon in the navigation menu once you're logged in. Your drop balance reflects your contribution and engagement with the platform.
 
 Your total drops balance is shown in real-time next to the water drop icon when you're logged in.
 
@@ -26,23 +21,33 @@ Your total drops balance is shown in real-time next to the water drop icon when 
 The primary way to earn drops is by completing missions. Each mission offers specific drop rewards:
 
 1. **Navigate to Missions**
-   - Click on a mission to see its details
-   - View the rewards section showing drop amounts
-   - Complete all tasks to unlock the reward
+   - Go to your Dashboard page
+   - Find missions in the Hub section
+   - Click on a mission to see its details and rewards
 
-2. **Claim Your Rewards**
-   - Once all tasks are complete, the "Claim Rewards" button activates
+2. **Complete Tasks**
+   - Follow the requirements for each task
+   - Some tasks are marked complete instantly upon submission
+   - Other tasks require evaluation - they'll only be marked complete after review and meeting quality benchmarks
+
+3. **Claim Your Rewards**
+   - Once ALL tasks are verified and complete, the "Claim Rewards" button activates
    - Click to claim and drops are added to your balance instantly
    - Claimed missions show as "Claimed" status
 
 ### Types of Activities That Earn Drops
 
-Based on the Progress tracking system, you earn drops from:
+You earn drops through:
 
-- **Task Completion** - Complete platform tasks
-- **Mission Achievement** - Finish entire mission sets
-- **Referral Activity** - Invite friends to join Bloom Protocol
-- **Helpful Actions** - Contribute positively to the community
+- **Mission Completion** - Only when ALL tasks in a mission are completed and verified will you receive the full mission rewards
+- **Participation Bonus** - Even if you don't complete all tasks, the platform may provide participation bonuses for your efforts
+- **Referral Activity** - Invite friends to join Bloom Protocol and earn when they register
+
+<Note>
+Individual task completion doesn't directly earn drops. Rewards are primarily given for completing entire missions. However, your participation efforts are recognized through bonus systems.
+</Note>
+
+We're constantly designing new ways to earn drops based on helpful actions and positive community contributions! Explore the platform regularly and discover additional opportunities as they become available. The most active and engaged users who contribute quality interactions often find rewarding activities before they're widely announced.
 
 ## Viewing Your Drops Balance
 
@@ -53,104 +58,15 @@ Once logged in, your drops balance appears in the top navigation:
 - Your current points total displayed next to it
 - Updates in real-time as you earn more
 
+<img src="https://statics.bloomprotocol.ai/tutorial/your_drops_displayed_here.png" alt="Drops displayed in navigation" width="100%" />
+
 ### In Your Dashboard
 
-Access detailed information in your dashboard:
-- Total points accumulated
-- Available points for use
-- Points history and transaction log
+The Recent Activity card shows your drops earned or deducted, giving you visibility into your balance changes.
 
-## Mission Rewards System
+<img src="https://statics.bloomprotocol.ai/tutorial/drops_in_recent_activity_card.png" alt="Drops in Recent Activity card" width="100%" />
 
-### Understanding Mission Requirements
 
-Each mission has multiple tasks organized by category. To claim drops:
-
-1. **View Mission Tasks**
-   - Tasks are grouped by type
-   - Each task shows completion status
-   - Progress tracked automatically
-
-2. **Complete All Tasks**
-   - Work through each task requirement
-   - Tasks mark as complete when finished
-   - All tasks must be done to claim rewards
-
-3. **Claim Process**
-   The reward card shows:
-   - Drop amount with water drop icon
-   - "Drops" label next to the amount
-   - Claim button with different states:
-     - **"Complete all tasks"** - Tasks still pending
-     - **"Claim Rewards"** - Ready to claim
-     - **"Claimed"** - Already claimed
-     - **"Processing..."** - Claim in progress
-
-### Reward Display
-
-Rewards are shown with:
-- Gradient water drop icon (green gradient)
-- Amount in bold text
-- "Drops" label in lighter text
-
-## Progress Tracking
-
-Your Progress section in the dashboard shows:
-
-### Activity Types
-- **All** - Complete activity history
-- **Task** - Task-specific activities  
-- **Referral Activity** - Referral-related actions
-
-### Status Indicators
-Each activity shows:
-- Type label (Task, Mission, Referral)
-- Current status (pending, in progress, completed, claimed)
-- Time elapsed since activity
-
-### Activity Feed Format
-- Color-coded type badges
-- Status descriptions (e.g., "Mission X is completed")
-- Relative timestamps (e.g., "2 hours ago")
-
-## Points Types Explained
-
-### Drops (Main Points)
-- Displayed in navigation when logged in
-- Primary reward currency
-- Used for platform benefits
-- Earned through missions and activities
-
-### Available vs Total Points
-- **Total Points**: Lifetime accumulation
-- **Available Points**: Current usable balance
-- **Frozen Points**: Temporarily locked points
-
-## Important Details
-
-### Real-Time Updates
-- Drop balance updates immediately after claiming
-- No need to refresh the page
-- Synchronized across all platform pages
-
-### Claiming Requirements
-- Must complete ALL tasks in a mission
-- Can only claim once per mission
-- Claims process instantly
-- No gas fees for claiming
-
-### Points Persistence
-- Points remain in your account
-- No expiration on earned drops
-- Balance carries forward indefinitely
-
-## Technical Implementation
-
-The drops system is powered by:
-- `pointsService` API for balance management
-- `useUserPoints` hook for real-time updates
-- React Query for caching and synchronization
-- JWT authentication for secure transactions
 
 ## Next Steps
 
