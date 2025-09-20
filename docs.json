@@ -31,7 +31,7 @@
           {
             "group": "Platform Features",
             "pages": [
-              "platform/project-spotlight",
+              "platform/spotlight",
               "platform/discover",
               "platform/review-system"
             ]
