@@ -22,10 +22,19 @@
             ]
           },
           {
-            "group": "Missions & Tasks",
+            "group": "Onsite Missions",
             "pages": [
               "missions/what-are-missions",
               "missions/task-completion-and-drops"
+            ]
+          },
+          {
+            "group": "Social Missions",
+            "pages": [
+              "missions/what-are-social-missions",
+              "missions/participation-guide",
+              "missions/rewards-and-x402",
+              "missions/social-missions-faq"
             ]
           },
           {
