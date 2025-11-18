@@ -31,10 +31,11 @@
           {
             "group": "Social Missions",
             "pages": [
-              "missions/overview",
-              "missions/participation-guide",
-              "missions/rewards-and-x402",
-              "missions/social-missions-faq"
+              "social-mission/overview",
+              "social-mission/how-to-participate",
+              "social-mission/how-to-create-mission",
+              "social-mission/rewards-and-x402",
+              "social-mission/faq"
             ]
           },
           {
