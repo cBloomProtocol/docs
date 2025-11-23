@@ -14,11 +14,19 @@
   },
   "navigation": {
         "groups": [
+          
           {
             "group": "Getting Started",
             "pages": [
               "getting-started/creating-account",
               "getting-started/understanding-drops"
+            ]
+          },
+          {
+            "group": "Product Updates",
+            "pages": [
+              "product-updates/recent-release",
+              "product-updates/planning"
             ]
           },
           {
