@@ -49,6 +49,7 @@
           {
             "group": "Platform Features",
             "pages": [
+              "platform/public-page",
               "platform/spotlight",
               "platform/discover",
               "platform/review-system"
