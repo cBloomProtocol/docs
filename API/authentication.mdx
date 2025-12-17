@@ -1,0 +1,93 @@
+---
+title: "Authentication"
+description: "How to authenticate with the Open API"
+---
+
+Builder endpoints require API Key authentication. Public endpoints can be accessed without authentication but are rate limited by IP.
+
+## Getting an API Key
+
+<Steps>
+  <Step title="Login to Bloom Protocol">
+    Go to [bloomprotocol.ai](https://bloomprotocol.ai) and connect your wallet
+  </Step>
+  <Step title="Navigate to API Keys">
+    Go to [Builder > API Keys](https://bloomprotocol.ai/builder/api-keys)
+  </Step>
+  <Step title="Create a new key">
+    Click **+ New Key** and give it a name (e.g., "Production Key")
+  </Step>
+  <Step title="Copy your key">
+    <Warning>
+      Copy your API key immediately! You won't be able to see it again.
+    </Warning>
+  </Step>
+</Steps>
+
+## Using Your API Key
+
+Include your API key in the `x-api-key` header:
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/stats" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+<Warning>
+The header name is lowercase: `x-api-key` (not `X-API-Key`)
+</Warning>
+
+## API Key Format
+
+API keys follow this format:
+
+```
+bp_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+- Prefix: `bp_live_`
+- Length: 44 characters total
+
+## Key Management
+
+### Limits
+
+- Maximum **3 active keys** per builder (configurable)
+- Revoked keys don't count toward the limit
+
+### Revoking Keys
+
+If your key is compromised:
+
+1. Go to [API Keys page](https://bloomprotocol.ai/builder/api-keys)
+2. Click **Revoke** on the compromised key
+3. Create a new key
+
+<Info>
+Revoked keys are soft-deleted and automatically cleaned up after 30 days.
+</Info>
+
+## Error Responses
+
+| Status | Description |
+|--------|-------------|
+| `401 Unauthorized` | API Key is missing or invalid |
+| `403 Forbidden` | API Key doesn't have permission for this resource |
+| `429 Too Many Requests` | Rate limit exceeded |
+
+### Example Error Response
+
+```json
+{
+  "success": false,
+  "statusCode": 401,
+  "message": "API Key invalid or missing"
+}
+```
+
+## Security Best Practices
+
+<Check>Store API keys in environment variables, never in code</Check>
+<Check>Use different keys for development and production</Check>
+<Check>Rotate keys periodically</Check>
+<Check>Revoke unused or compromised keys immediately</Check>

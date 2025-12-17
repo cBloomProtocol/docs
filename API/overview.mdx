@@ -1,0 +1,83 @@
+---
+title: "Open API Overview"
+description: "Integrate Social Missions into your application"
+---
+
+Bloom Protocol Open API allows builders to programmatically manage their Social Missions, view submissions, and approve rewards.
+
+## Base URL
+
+```
+https://api.bloomprotocol.ai
+```
+
+## API Documentation
+
+Interactive API documentation is available at:
+
+```
+https://api.bloomprotocol.ai/docs
+```
+
+## What You Can Do
+
+<CardGroup cols={2}>
+  <Card title="Query Missions" icon="list">
+    Get list of active Social Missions and their details
+  </Card>
+  <Card title="View Submissions" icon="inbox">
+    See all submissions for your missions with AI review scores
+  </Card>
+  <Card title="Approve/Reject" icon="check">
+    Programmatically approve or reject submissions
+  </Card>
+  <Card title="Usage Analytics" icon="chart-line">
+    Track your API usage and statistics
+  </Card>
+</CardGroup>
+
+## Two Tiers of Access
+
+| Tier | Authentication | Access |
+|------|---------------|--------|
+| **Public** | None (IP rate limited) | View missions and public submission data |
+| **Builder** | API Key required | Full access including AI review scores, approve/reject actions |
+
+## Quick Start
+
+<Steps>
+  <Step title="Get your API Key">
+    Go to [Builder Dashboard](https://bloomprotocol.ai/builder/api-keys) and create an API key
+  </Step>
+  <Step title="Make your first request">
+    ```bash
+    curl -X GET "https://api.bloomprotocol.ai/open/v1/missions" \
+      -H "x-api-key: your_api_key_here"
+    ```
+  </Step>
+  <Step title="Check the response">
+    ```json
+    {
+      "success": true,
+      "data": {
+        "missions": [...],
+        "pagination": { "page": 1, "limit": 20, "total": 5 }
+      }
+    }
+    ```
+  </Step>
+</Steps>
+
+## Next Steps
+
+<Card title="Authentication" icon="key" href="/API/authentication">
+  Learn how to get and use API keys
+</Card>
+
+<Card title="Public Endpoints" icon="globe" href="/API/public-endpoints">
+  Endpoints available without authentication
+</Card>
+
+<Card title="Builder Endpoints" icon="hammer" href="/API/builder-endpoints">
+  Full API access for mission builders
+</Card>

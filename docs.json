@@ -56,6 +56,16 @@
             ]
           },
           {
+            "group": "Open API",
+            "pages": [
+              "API/overview",
+              "API/authentication",
+              "API/public-endpoints",
+              "API/builder-endpoints",
+              "API/rate-limits"
+            ]
+          },
+          {
             "group": "Support",
             "pages": [
               "support/faq",

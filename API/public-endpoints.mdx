@@ -1,0 +1,154 @@
+---
+title: "Public Endpoints"
+description: "Endpoints available without authentication"
+---
+
+Public endpoints are accessible without an API key. They are rate limited by IP address.
+
+## List Missions
+
+Get all public Social Missions.
+
+<ParamField path="GET" query="/open/v1/missions">
+  Query Social Mission list
+</ParamField>
+
+### Query Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `page` | number | No | Page number (default: 1) |
+| `limit` | number | No | Items per page (default: 20) |
+| `status` | string | No | Filter: `active`, `ended`, `all` |
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/missions?status=active&limit=10"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "missions": [
+      {
+        "tweetId": "1234567890",
+        "title": "Try our new swap feature!",
+        "builderUsername": "ProjectName",
+        "status": "active",
+        "submissionCount": 42,
+        "createdAt": "2025-01-15T08:00:00.000Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "limit": 10,
+      "total": 25,
+      "hasMore": true
+    }
+  }
+}
+```
+
+---
+
+## Get Mission Detail
+
+Get details of a specific mission.
+
+<ParamField path="GET" query="/open/v1/missions/:tweetId">
+  Query Mission detail
+</ParamField>
+
+### Path Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `tweetId` | string | Mission X tweet ID |
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/missions/1234567890"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "tweetId": "1234567890",
+    "title": "Try our new swap feature!",
+    "description": "Share your experience with our swap feature",
+    "builderUsername": "ProjectName",
+    "builderName": "Project Name",
+    "status": "active",
+    "submissionCount": 42,
+    "createdAt": "2025-01-15T08:00:00.000Z"
+  }
+}
+```
+
+---
+
+## List Public Submissions
+
+Get submissions for a mission (limited fields).
+
+<ParamField path="GET" query="/open/v1/missions/:tweetId/submissions">
+  Query Submission list (public version)
+</ParamField>
+
+### Path Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `tweetId` | string | Mission X tweet ID |
+
+### Query Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `page` | number | No | Page number (default: 1) |
+| `limit` | number | No | Items per page (default: 20) |
+| `status` | string | No | Filter: `COMPLETED`, `IN_PROGRESS`, `all` |
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/missions/1234567890/submissions?status=COMPLETED"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "submissions": [
+      {
+        "id": 1,
+        "xHandle": "user123",
+        "xPostUrl": "https://x.com/user123/status/9876543210",
+        "content": "Just tried the swap feature, super smooth!",
+        "submittedAt": "2025-01-15T10:30:00.000Z",
+        "status": "COMPLETED"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "limit": 20,
+      "total": 42,
+      "hasMore": true
+    }
+  }
+}
+```
+
+<Info>
+Public submissions don't include AI review scores. Use [Builder Endpoints](/API/builder-endpoints) for full data.
+</Info>

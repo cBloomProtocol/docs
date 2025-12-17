@@ -1,0 +1,222 @@
+---
+title: "Builder Endpoints"
+description: "Full API access for mission builders"
+---
+
+Builder endpoints require API Key authentication and provide full access to your mission data, including AI review scores and submission management.
+
+<Info>
+All Builder endpoints require the `x-api-key` header.
+</Info>
+
+## Get Submissions (Full)
+
+Get all submissions for your mission with AI review data.
+
+<ParamField path="GET" query="/open/v1/builder/missions/:tweetId/submissions">
+  Get Submission full info
+</ParamField>
+
+### Path Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `tweetId` | string | Tweet ID of your mission |
+
+### Query Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `page` | number | No | Page number (default: 1) |
+| `limit` | number | No | Items per page (default: 20, max: 100) |
+| `status` | string | No | Filter by status |
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/missions/1234567890/submissions" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "submissions": [
+      {
+        "id": 1,
+        "xHandle": "user123",
+        "xPostUrl": "https://x.com/user123/status/9876543210",
+        "content": "Just tried the swap feature, super smooth!",
+        "submittedAt": "2025-01-15T10:30:00.000Z",
+        "status": "IN_PROGRESS",
+        "dropsStatus": "pending",
+        "tokenStatus": "pending",
+        "llmV2ReviewStatus": {
+          "status": true,
+          "result": {
+            "quality_score": 85,
+            "ai_likelihood": 12,
+            "message": "High quality original content"
+          },
+          "reviewed_at": "2025-01-15T10:31:00.000Z"
+        }
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "limit": 20,
+      "total": 42,
+      "hasMore": true
+    }
+  }
+}
+```
+
+### AI Review Fields
+
+| Field | Description |
+|-------|-------------|
+| `quality_score` | Content quality score (0-100) |
+| `ai_likelihood` | Likelihood of AI-generated content (0-100) |
+| `message` | AI review summary |
+
+---
+
+## Get Builder Stats
+
+Get statistics for all your missions.
+
+<ParamField path="GET" query="/open/v1/builder/stats">
+  Get Builder statistics
+</ParamField>
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/stats" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "totalSocialMissions": 5,
+    "uniqueSupporters": 128,
+    "totalSubmissions": 342,
+    "missionStats": [
+      {
+        "tweetId": "1234567890",
+        "title": "Try our swap feature!",
+        "totalSubmissions": 42,
+        "verifiedCount": 38,
+        "pendingCount": 4
+      }
+    ]
+  }
+}
+```
+
+---
+
+## Get API Usage
+
+Get your API usage statistics.
+
+<ParamField path="GET" query="/open/v1/builder/usage">
+  Get API usage statistics
+</ParamField>
+
+### Query Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `startDate` | string | No | Start date (YYYY-MM-DD) |
+| `endDate` | string | No | End date (YYYY-MM-DD) |
+
+### Example Request
+
+```bash
+curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/usage?startDate=2025-01-01&endDate=2025-01-31" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+---
+
+## Approve Submission
+
+Approve a submission and trigger reward distribution.
+
+<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/approve">
+  Approve Submission
+</ParamField>
+
+### Path Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `submissionId` | number | Submission ID |
+
+### Example Request
+
+```bash
+curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/approve" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+### Example Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "submissionId": 123,
+    "previousStatus": "IN_PROGRESS",
+    "newStatus": "COMPLETED",
+    "updatedAt": "2025-01-15T12:00:00.000Z"
+  }
+}
+```
+
+---
+
+## Reject Submission
+
+Reject a submission.
+
+<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/reject">
+  Reject Submission
+</ParamField>
+
+### Example Request
+
+```bash
+curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/reject" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+---
+
+## Reset Submission
+
+Reset a submission back to IN_PROGRESS status.
+
+<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/reset">
+  Reset Submission status
+</ParamField>
+
+### Example Request
+
+```bash
+curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/reset" \
+  -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
+```
+
+<Warning>
+You can only manage submissions for missions you own. Attempting to access other builders' missions will return a 403 Forbidden error.
+</Warning>
