@@ -34,7 +34,7 @@ Get all submissions for your mission with AI review data.
 ### Example Request
 
 ```bash
-curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/missions/1234567890/submissions" \
+curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/missions/1234567890/submissions" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -96,7 +96,7 @@ Get statistics for all your missions.
 ### Example Request
 
 ```bash
-curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/stats" \
+curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/stats" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -142,7 +142,7 @@ Get your API usage statistics.
 ### Example Request
 
 ```bash
-curl -X GET "https://api.bloomprotocol.ai/open/v1/builder/usage?startDate=2025-01-01&endDate=2025-01-31" \
+curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/usage?startDate=2025-01-01&endDate=2025-01-31" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -165,7 +165,7 @@ Approve a submission and trigger reward distribution.
 ### Example Request
 
 ```bash
-curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/approve" \
+curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/approve" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -196,7 +196,7 @@ Reject a submission.
 ### Example Request
 
 ```bash
-curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/reject" \
+curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/reject" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -213,7 +213,7 @@ Reset a submission back to IN_PROGRESS status.
 ### Example Request
 
 ```bash
-curl -X PATCH "https://api.bloomprotocol.ai/open/v1/builder/submissions/123/reset" \
+curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/reset" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
