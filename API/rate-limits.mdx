@@ -72,20 +72,20 @@ async function fetchWithRetry(url, options, maxRetries = 3) {
 
 | Endpoint | Limit |
 |----------|-------|
-| `GET /open/v1/missions` | 15/min |
-| `GET /open/v1/missions/:tweetId` | 15/min |
-| `GET /open/v1/missions/:tweetId/submissions` | 15/min |
+| `GET /v1/missions` | 15/min |
+| `GET /v1/missions/:tweetId` | 15/min |
+| `GET /v1/missions/:tweetId/submissions` | 15/min |
 
 ### Builder Endpoints (API Key Required)
 
 | Endpoint | Limit |
 |----------|-------|
-| `GET /open/v1/builder/missions/:tweetId/submissions` | 60/min |
-| `GET /open/v1/builder/stats` | 60/min |
-| `GET /open/v1/builder/usage` | 60/min |
-| `PATCH /open/v1/builder/submissions/:id/approve` | 60/min |
-| `PATCH /open/v1/builder/submissions/:id/reject` | 60/min |
-| `PATCH /open/v1/builder/submissions/:id/reset` | 60/min |
+| `GET /v1/builder/missions/:tweetId/submissions` | 60/min |
+| `GET /v1/builder/stats` | 60/min |
+| `GET /v1/builder/usage` | 60/min |
+| `PATCH /v1/builder/submissions/:id/approve` | 60/min |
+| `PATCH /v1/builder/submissions/:id/reject` | 60/min |
+| `PATCH /v1/builder/submissions/:id/reset` | 60/min |
 
 <Info>
 Rate limits are configurable by administrators and may change. Always check the response headers for current limits.

@@ -9,7 +9,7 @@ Public endpoints are accessible without an API key. They are rate limited by IP 
 
 Get all public Social Missions.
 
-<ParamField path="GET" query="/open/v1/missions">
+<ParamField path="GET" query="/v1/missions">
   Query Social Mission list
 </ParamField>
 
@@ -24,7 +24,7 @@ Get all public Social Missions.
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/missions?status=active&limit=10"
+curl -X GET "https://connect.bloomprotocol.ai/v1/missions?status=active&limit=10"
 ```
 
 ### Example Response
@@ -59,7 +59,7 @@ curl -X GET "https://connect.bloomprotocol.ai/open/v1/missions?status=active&lim
 
 Get details of a specific mission.
 
-<ParamField path="GET" query="/open/v1/missions/:tweetId">
+<ParamField path="GET" query="/v1/missions/:tweetId">
   Query Mission detail
 </ParamField>
 
@@ -72,7 +72,7 @@ Get details of a specific mission.
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/missions/1234567890"
+curl -X GET "https://connect.bloomprotocol.ai/v1/missions/1234567890"
 ```
 
 ### Example Response
@@ -99,7 +99,7 @@ curl -X GET "https://connect.bloomprotocol.ai/open/v1/missions/1234567890"
 
 Get submissions for a mission (limited fields).
 
-<ParamField path="GET" query="/open/v1/missions/:tweetId/submissions">
+<ParamField path="GET" query="/v1/missions/:tweetId/submissions">
   Query Submission list (public version)
 </ParamField>
 
@@ -120,7 +120,7 @@ Get submissions for a mission (limited fields).
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/missions/1234567890/submissions?status=COMPLETED"
+curl -X GET "https://connect.bloomprotocol.ai/v1/missions/1234567890/submissions?status=COMPLETED"
 ```
 
 ### Example Response

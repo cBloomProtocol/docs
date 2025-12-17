@@ -13,7 +13,7 @@ All Builder endpoints require the `x-api-key` header.
 
 Get all submissions for your mission with AI review data.
 
-<ParamField path="GET" query="/open/v1/builder/missions/:tweetId/submissions">
+<ParamField path="GET" query="/v1/builder/missions/:tweetId/submissions">
   Get Submission full info
 </ParamField>
 
@@ -34,7 +34,7 @@ Get all submissions for your mission with AI review data.
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/missions/1234567890/submissions" \
+curl -X GET "https://connect.bloomprotocol.ai/v1/builder/missions/1234567890/submissions" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -89,14 +89,14 @@ curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/missions/123456789
 
 Get statistics for all your missions.
 
-<ParamField path="GET" query="/open/v1/builder/stats">
+<ParamField path="GET" query="/v1/builder/stats">
   Get Builder statistics
 </ParamField>
 
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/stats" \
+curl -X GET "https://connect.bloomprotocol.ai/v1/builder/stats" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -128,7 +128,7 @@ curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/stats" \
 
 Get your API usage statistics.
 
-<ParamField path="GET" query="/open/v1/builder/usage">
+<ParamField path="GET" query="/v1/builder/usage">
   Get API usage statistics
 </ParamField>
 
@@ -142,7 +142,7 @@ Get your API usage statistics.
 ### Example Request
 
 ```bash
-curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/usage?startDate=2025-01-01&endDate=2025-01-31" \
+curl -X GET "https://connect.bloomprotocol.ai/v1/builder/usage?startDate=2025-01-01&endDate=2025-01-31" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -152,7 +152,7 @@ curl -X GET "https://connect.bloomprotocol.ai/open/v1/builder/usage?startDate=20
 
 Approve a submission and trigger reward distribution.
 
-<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/approve">
+<ParamField path="PATCH" query="/v1/builder/submissions/:submissionId/approve">
   Approve Submission
 </ParamField>
 
@@ -165,7 +165,7 @@ Approve a submission and trigger reward distribution.
 ### Example Request
 
 ```bash
-curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/approve" \
+curl -X PATCH "https://connect.bloomprotocol.ai/v1/builder/submissions/123/approve" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -189,14 +189,14 @@ curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/
 
 Reject a submission.
 
-<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/reject">
+<ParamField path="PATCH" query="/v1/builder/submissions/:submissionId/reject">
   Reject Submission
 </ParamField>
 
 ### Example Request
 
 ```bash
-curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/reject" \
+curl -X PATCH "https://connect.bloomprotocol.ai/v1/builder/submissions/123/reject" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -206,14 +206,14 @@ curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/
 
 Reset a submission back to IN_PROGRESS status.
 
-<ParamField path="PATCH" query="/open/v1/builder/submissions/:submissionId/reset">
+<ParamField path="PATCH" query="/v1/builder/submissions/:submissionId/reset">
   Reset Submission status
 </ParamField>
 
 ### Example Request
 
 ```bash
-curl -X PATCH "https://connect.bloomprotocol.ai/open/v1/builder/submissions/123/reset" \
+curl -X PATCH "https://connect.bloomprotocol.ai/v1/builder/submissions/123/reset" \
   -H "x-api-key: bp_live_xxxxxxxxxxxxxxxxxxxx"
 ```
 
