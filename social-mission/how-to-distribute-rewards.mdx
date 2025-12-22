@@ -1,0 +1,154 @@
+---
+title: "How to Distribute Token Rewards"
+description: "A step-by-step guide for project teams to distribute token rewards to mission participants"
+---
+
+This guide walks you through distributing token rewards to participants who completed your social mission.
+
+## Before You Start
+
+Make sure you have:
+- An active social mission with approved submissions
+- Tokens (USDT or USDC) ready in your wallet
+- Access to the Builder Dashboard
+
+<Warning>
+**Important**: Participants must have configured their wallet address in Bloom Protocol settings to receive rewards. Those without a wallet setup will be skipped during distribution.
+</Warning>
+
+---
+
+## Step 1: Configure Your Reward Settings
+
+Before distributing rewards, you need to set up your reward configuration.
+
+1. Go to your **Builder Dashboard**
+2. Find your mission and click **Mission Settings**
+3. Under the **Reward** section:
+   - Select the **blockchain network**:
+     - **Base** (default: USDC)
+     - **BSC / BNB Chain** (default: USDT)
+     - **Solana** (default: USDC)
+   - Confirm the **token** type
+   - Enter the **amount per submission** (e.g., 10 USDC)
+4. Click **Save**
+
+<Tip>
+Choose a network where you already have tokens available. This makes the transfer process easier.
+</Tip>
+
+---
+
+## Step 2: Review and Approve Submissions
+
+Only approved submissions are eligible for token rewards.
+
+1. Go to your mission's **Submissions** tab
+2. Review each submission carefully
+3. Click **Approve** for quality submissions
+4. Click **Reject** for submissions that don't meet your requirements
+
+<Note>
+Take your time reviewing. Once you distribute rewards, approved submissions become locked and cannot be changed.
+</Note>
+
+---
+
+## Step 3: Start the Distribution
+
+1. In your mission dashboard, find the **Distribute Token Reward** section
+2. Click **Distribute Token Reward**
+3. The system will calculate:
+   - Number of eligible participants (approved submissions with wallet setup)
+   - Total token amount required
+
+**Example**: If you set 10 USDT per submission and have 15 eligible participants, the total is 150 USDT.
+
+---
+
+## Step 4: Transfer Tokens to Platform Wallet
+
+After clicking distribute, you'll see:
+- The **platform wallet address**
+- The **exact amount** to transfer
+- The **network and token** to use
+
+**What to do**:
+
+1. Open your wallet app (e.g., MetaMask, Phantom, OKX Wallet)
+2. Make sure you're on the correct network (Base, BSC, or Solana)
+3. Send the **exact amount** to the platform wallet address
+4. Wait for the transaction to confirm on the blockchain
+
+<Warning>
+**Send the exact amount shown**. Sending less will cause verification to fail. Sending more is okay but won't be refunded automatically.
+</Warning>
+
+---
+
+## Step 5: Confirm Your Transfer
+
+Once your on-chain transfer is complete:
+
+1. Copy the **transaction hash** from your wallet
+2. Paste it into the **Transaction Hash** field
+3. Click **Confirm Transfer**
+
+The system will verify your transaction on the blockchain. This usually takes about 1-2 minutes.
+
+---
+
+## Step 6: Automatic Distribution
+
+After verification succeeds:
+- The system automatically sends rewards to all eligible participants
+- Each participant receives tokens directly to their configured wallet
+- You can track the distribution progress in your dashboard
+
+**That's it!** Your participants will receive their rewards shortly.
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="What if some participants don't have a wallet set up?">
+    They will be skipped during this distribution. You can run another distribution later when they configure their wallet.
+  </Accordion>
+
+  <Accordion title="Can I distribute rewards multiple times?">
+    Yes! Each distribution only sends to participants who haven't received rewards yet. New approved submissions can be distributed in future batches.
+  </Accordion>
+
+  <Accordion title="What networks and tokens are supported?">
+    Currently supported:
+    - **Base**: USDC
+    - **BSC (BNB Chain)**: USDT, USDC
+    - **Solana**: USDC
+  </Accordion>
+
+  <Accordion title="Is there a service fee?">
+    No. Token distribution is currently free for all builders.
+  </Accordion>
+
+  <Accordion title="What if verification fails?">
+    Double-check that:
+    - You sent to the correct wallet address
+    - You used the correct network and token
+    - The transaction is fully confirmed on-chain
+
+    If issues persist, contact our support team.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Next Steps
+
+<Card title="Create Your First Mission" icon="plus" href="/social-mission/how-to-create-mission">
+  Learn how to create and launch a social mission
+</Card>
+
+<Card title="Understanding Rewards" icon="gift" href="/social-mission/how-to-claim-reward">
+  See how participants receive and claim rewards
+</Card>
