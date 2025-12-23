@@ -3,18 +3,16 @@ title: "Recent Release"
 description: "Latest updates and features released on Bloom Protocol"
 ---
 
-<Update label="Dec 2025" tags={["Builder Dashboard", "Open API", "LLM", "Observability"]}>
-## Builders got a dashboard (goodbye spreadsheets), API went public (good luck), AI judges your submissions now, and we added enough monitoring to make Big Brother jealous 🎁
-> we'll know about your bugs before you finish typing the report — creepy but efficient
+<Update label="Dec 2025" tags={["Builder Dashboard", "Open API", "Auto Rewards", "UI Polish"]}>
+## Builders can finally stop babysitting submissions, we moved AI to the cloud (because local is so 2024), and the homepage got a video because static images were too mainstream 🎁
+> auto-distribute drops on approve — because clicking twice was apparently too much effort for you people
 
-* **Builder**: Full management panel for project teams — review submissions, approve/reject, export CSV, configure rewards, distribute Drops, and applt API keys
-* **Social Mission Open API (bp-api)**: Brand new public API service at connect.bloomprotocol.ai — Builder API keys, usage tracking, rate limits per endpoint, and comprehensive documentation
-* **LLM V2 Module**: New AI system with multi-provider support (Gemini, OpenAI, Anthropic), batch scheduler, social mission review prompts, and automatic submission review scoring with MongoDB logging
-* **Reward Distribution**: Automated reward distribution via cron jobs with precise eligible count calculations and x402_links chain verification
-* **Full-Stack Observability**: Grafana Faro frontend integration, OpenTelemetry tracing with Server-Timing headers for end-to-end correlation, and structured logging overhaul
+* **Auto-Distribute Drops**: Toggle "Distribute drops when approved" and never manually click distribute again — we automated your job, you're welcome
+* **Builder Dashboard Polish**: Simplified submission filters (removed redundant DISTRIBUTED tab), approval settings panel, and CSV export that actually makes sense now
+* **x402 Page Redesign**: Collapsible "How it Works" sections, wallet management modal, remove address functionality, and public page toggle that actually syncs across components (revolutionary, we know)
+* **LLM Microservice Migration**: Moved all AI processing to external service — our backend is now 200MB lighter and pretending it was never into AI anyway
+* **UI/UX Consistency**: Every modal, button, and TaskCard now matches Figma designs — the designer-developer peace treaty of 2025
 * **Mission Enhancements**: Breadcrumb navigation, dynamic SEO metadata, preview mode for draft projects, and mission slug support
-* **Profile Improvements**: Public profile visibility toggle, avatar URL support in x402, and auth guards for protected routes
-* **Access Code Removal**: Complete removal of access code system from both frontend and backend — true open beta is here
 </Update>
 
 <Update label="Nov 2025" tags={["Open Beta", "Wallet", "Social Mission", "X OAuth"]}>
